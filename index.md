@@ -15,3 +15,7 @@
 
 ### Courses
  - Bitcoin (not watched): https://www.coursera.org/course/bitcointech
+ - 
+### Tools 
+ - http://dillinger.io/  - markdown editor and export to html
+ - http://codebeautify.org/htmlviewer/ - html beautifier 

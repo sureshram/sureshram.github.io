@@ -11,3 +11,7 @@ Visualization/Charting
 - https://github.com/ecomfe/echarts (Baidu)
 - http://callmecavs.com/bricks.js/
 - https://vega.github.io/vega/
+- http://vcl.github.io/  (CSS Library)
+- https://github.com/firehol/netdata - (Monitoring Visualization)
+- http://benpickles.github.io/peity/
+- http://dygraphs.com/

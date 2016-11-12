@@ -1,4 +1,8 @@
-# Blog about My World
+Blog about My World
+-------------------
+
+* My Github Repo: https://github.com/sureshram
+* My LinkedIn Profile: https://linkedin.com/in/sramakrishnaiah
 
 
 ### Engineering Blogs

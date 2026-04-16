@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suresh Ramakrishnaiah | Grid Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --accent: #3b82f6;
+            --accent-subtle: #eff6ff;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            padding: 40px 20px;
+        }
+
+        .bento-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(160px, auto);
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+
+        .hero-card {
+            grid-column: span 2;
+            grid-row: span 1;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            justify-content: center;
+        }
+
+        .hero-card h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+        }
+
+        .hero-card p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .social-card {
+            grid-column: span 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 600;
+            padding: 12px;
+            border-radius: 12px;
+            background: var(--bg);
+            transition: background 0.2s;
+        }
+
+        .social-link:hover {
+            background: var(--accent-subtle);
+            color: var(--accent);
+        }
+
+        .section-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .project-card {
+            grid-column: span 1;
+        }
+
+        .project-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .project-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-grow: 1;
+        }
+
+        .project-card .link {
+            margin-top: 16px;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .blog-list-card {
+            grid-column: span 2;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .blog-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+
+        .blog-item:hover {
+            border-color: var(--accent);
+            background: var(--accent-subtle);
+        }
+
+        .resource-card {
+            grid-column: span 1;
+        }
+
+        @media (max-width: 900px) {
+            .bento-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-card, .blog-list-card {
+                grid-column: span 1;
+            }
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bento-grid">
+        <!-- Hero -->
+        <div class="card hero-card">
+            <h1>Suresh Ramakrishnaiah</h1>
+            <p>Crafting systems, curating knowledge, and visualizing the future of engineering.</p>
+        </div>
+
+        <!-- Socials -->
+        <div class="card social-card">
+            <a href="https://github.com/sureshram" class="social-link">
+                <i data-lucide="github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/sramakrishnaiah" class="social-link">
+                <i data-lucide="linkedin"></i> LinkedIn
+            </a>
+        </div>
+
+        <!-- Projects -->
+        <div class="card project-card">
+            <div class="section-title"><i data-lucide="cpu" size="16"></i> Project</div>
+            <h3>Minecraft Python</h3>
+            <p>A voxel-based world engine built from scratch in Python.</p>
+            <a href="https://github.com/fogleman/Minecraft" class="link">View Source <i data-lucide="arrow-up-right" size="14"></i></a>
+        </div>
+
+        <div class="card project-card">
+            <div class="section-title"><i data-lucide="bar-chart-3" size="16"></i> Project</div>
+            <h3>Netdata</h3>
+            <p>Real-time distributed monitoring and observability for modern infrastructure.</p>
+            <a href="https://github.com/firehol/netdata" class="link">View Project <i data-lucide="arrow-up-right" size="14"></i></a>
+        </div>
+
+        <div class="card project-card">
+            <div class="section-title"><i data-lucide="layers" size="16"></i> Project</div>
+            <h3>Bricks.js</h3>
+            <p>A blazing fast masonry layout generator for fixed-width elements.</p>
+            <a href="http://callmecavs.com/bricks.js/" class="link">Learn More <i data-lucide="arrow-up-right" size="14"></i></a>
+        </div>
+
+        <!-- Blog Library -->
+        <div class="card blog-list-card">
+            <div class="section-title"><i data-lucide="book-open" size="16"></i> Engineering Library</div>
+            <div class="blog-grid">
+                <a href="https://engineering.groupon.com" class="blog-item">Groupon Eng <i data-lucide="chevron-right" size="16"></i></a>
+                <a href="https://labs.spotify.com/" class="blog-item">Spotify Labs <i data-lucide="chevron-right" size="16"></i></a>
+                <a href="https://engineering.pinterest.com/blog" class="blog-item">Pinterest Eng <i data-lucide="chevron-right" size="16"></i></a>
+                <a href="https://blog.twitter.com/engineering" class="blog-item">Twitter Eng <i data-lucide="chevron-right" size="16"></i></a>
+                <a href="https://engineering.linkedin.com/blog" class="blog-item">LinkedIn Eng <i data-lucide="chevron-right" size="16"></i></a>
+                <a href="https://www.facebook.com/Engineering" class="blog-item">Facebook Eng <i data-lucide="chevron-right" size="16"></i></a>
+            </div>
+        </div>
+
+        <!-- Writings & Resources -->
+        <div class="card resource-card">
+            <div class="section-title"><i data-lucide="file-text" size="16"></i> Latest Writing</div>
+            <h3 style="font-size: 1rem; margin-bottom: 8px;">Regression Analysis Refresher</h3>
+            <p style="font-size: 0.85rem;">Key concepts in statistical modeling for engineering.</p>
+            <a href="https://hbr.org/2015/11/a-refresher-on-regression-analysis" class="link">Read Article <i data-lucide="arrow-up-right" size="14"></i></a>
+        </div>
+
+        <div class="card resource-card">
+            <div class="section-title"><i data-lucide="wrench" size="16"></i> Dev Tool</div>
+            <h3 style="font-size: 1rem; margin-bottom: 8px;">AWS DynamoDB Gist</h3>
+            <p style="font-size: 0.85rem;">Optimized patterns for NoSQL data modeling.</p>
+            <a href="https://gist.github.com/sureshram/2342926f0a054c75668076c594b33c30" class="link">View Gist <i data-lucide="arrow-up-right" size="14"></i></a>
+        </div>
+
+        <div class="card resource-card">
+            <div class="section-title"><i data-lucide="layout" size="16"></i> Visualization</div>
+            <h3 style="font-size: 1rem; margin-bottom: 8px;">Echarts (Baidu)</h3>
+            <p style="font-size: 0.85rem;">Powerful, interactive charting and data visualization library.</p>
+            <a href="https://github.com/ecomfe/echarts" class="link">Explore <i data-lucide="arrow-up-right" size="14"></i></a>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

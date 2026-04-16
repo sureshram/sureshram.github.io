@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suresh Ramakrishnaiah | Software Engineer & Curator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --accent: #2d5a27;
+            --border: #eeeeee;
+            --spacing-unit: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        header {
+            margin-bottom: 80px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            margin-bottom: 64px;
+        }
+
+        h2 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+
+        .item {
+            margin-bottom: 32px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--text-primary);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        .item-title:hover {
+            color: var(--accent);
+        }
+
+        .item-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .grid-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .blog-link {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-size: 1rem;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .blog-link:hover {
+            border-color: var(--accent);
+            background: #fdfdfd;
+        }
+
+        footer {
+            margin-top: 120px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .grid-links { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Suresh Ramakrishnaiah</h1>
+            <p class="tagline">Software Engineer, Tech Curator, and Data Visualization Enthusiast.</p>
+            <div class="social-links">
+                <a href="https://github.com/sureshram"><i data-lucide="github" size="18"></i> GitHub</a>
+                <a href="https://linkedin.com/in/sramakrishnaiah"><i data-lucide="linkedin" size="18"></i> LinkedIn</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Selected Writings</h2>
+            <div class="item">
+                <a href="https://hbr.org/2015/11/a-refresher-on-regression-analysis" class="item-title">A Refresher on Regression Analysis <i data-lucide="external-link" size="14"></i></a>
+                <p class="item-desc">A deep dive into the fundamentals of regression analysis and its practical applications in data science.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Top Projects</h2>
+            <div class="item">
+                <a href="https://github.com/fogleman/Minecraft" class="item-title">Minecraft in Python <i data-lucide="github" size="14"></i></a>
+                <p class="item-desc">A simple Minecraft clone written in Python and Pyglet.</p>
+            </div>
+            <div class="item">
+                <a href="https://github.com/firehol/netdata" class="item-title">Netdata <i data-lucide="github" size="14"></i></a>
+                <p class="item-desc">Real-time performance monitoring and visualization for systems and applications.</p>
+            </div>
+            <div class="item">
+                <a href="https://vega.github.io/vega/" class="item-title">Vega Visualization <i data-lucide="external-link" size="14"></i></a>
+                <p class="item-desc">A visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Engineering Library</h2>
+            <div class="grid-links">
+                <a href="https://engineering.groupon.com" class="blog-link">Groupon Eng <i data-lucide="chevron-right" size="16"></i></a>
+                <a href="https://engineering.linkedin.com/blog" class="blog-link">LinkedIn Eng <i data-lucide="chevron-right" size="16"></i></a>
+                <a href="https://labs.spotify.com/" class="blog-link">Spotify Labs <i data-lucide="chevron-right" size="16"></i></a>
+                <a href="https://engineering.pinterest.com/blog" class="blog-link">Pinterest Eng <i data-lucide="chevron-right" size="16"></i></a>
+                <a href="https://blog.twitter.com/engineering" class="blog-link">Twitter Eng <i data-lucide="chevron-right" size="16"></i></a>
+                <a href="https://www.facebook.com/Engineering" class="blog-link">Facebook Eng <i data-lucide="chevron-right" size="16"></i></a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Resources</h2>
+            <div class="item">
+                <a href="https://gist.github.com/sureshram/2342926f0a054c75668076c594b33c30" class="item-title">AWS DynamoDB Guide <i data-lucide="link" size="14"></i></a>
+                <p class="item-desc">A curated set of tips and tricks for mastering DynamoDB at scale.</p>
+            </div>
+            <div class="item">
+                <a href="https://news.ycombinator.com/" class="item-title">Hacker News <i data-lucide="external-link" size="14"></i></a>
+                <p class="item-desc">Daily technology news and discussion.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Suresh Ramakrishnaiah. Curated with care.</p>
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 # Suresh Ramakrishnaiah  
-Pleasanton, CA • (408) 663-7353 • sramkrishnaiah@gmail.com • LinkedIn  
+Pleasanton, CA • LinkedIn  
 
 ---
 

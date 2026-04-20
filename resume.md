@@ -1,5 +1,5 @@
 # Suresh Ramakrishnaiah  
-Pleasanton, CA • LinkedIn  
+| (LinkedIn: https://www.linkedin.com/in/sureshram/) | (GitHub: https://github.com/sureshram) | (X: https://x.com/sureshram)
 
 ---
 

@@ -1,10 +1,7 @@
 # Developer Toolkit
 
-### Productivity
-- [Dillinger](http://dillinger.io/) — Advanced cloud-based Markdown editor.
-- [CodeBeautify](http://codebeautify.org/htmlviewer/) — High-fidelity code inspection tools.
-- [AWS DynamoDB](https://gist.github.com/sureshram/2342926f0a054c75668076c594b33c30) — Specialized NoSQL modeling patterns.
-
-### Curation Feed
-- [Hacker News](https://news.ycombinator.com/) — Real-time industry intelligence.
-- [Streaming Algos](https://gist.github.com/debasishg/8172796) — Advanced data processing paradigms.
+### Maekdown Tools
+- [HTML to Markdown to View - Web](https://html2markdown.gowdaru.com/) — Convert between HTML to Markdown format. Edit Markdown file  and View markdown file in html.
+- [Doc/PDF to Markdown - CLI](https://github.com/markdown-it/markdown-it) — convert doc/pdf to markdown format on the command line useful for automation.
+- Markdown Viewer - CLI:  qlmanage -p file.md (MacOS built in)
+  
